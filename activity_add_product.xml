@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E453AEF6"
+        android:id="@+id/addtoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"
+                android:id="@+id/addProductBack"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/add_a_product"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="15dp"/>
+
+        </LinearLayout>
+
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addtoolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/addprod"
+                android:id="@+id/addProductImg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/name_of_the_product"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductName"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@drawable/edittextshape"
+                android:inputType="text"
+                android:hint="@string/nikee"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/unit_price_of_the_product_in"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/addProductPrice"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:background="@drawable/edittextshape"
+                    android:hint="@string/_600"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/description_of_the_product"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductDesc"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:inputType="text"
+                android:background="@drawable/edittextshape"
+                android:hint="@string/soft"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/category_of_the_product_eg_smartphone_shoes_etc"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductCategory"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:inputType="text"
+                android:background="@drawable/edittextshape"
+                android:hint="@string/Shoes"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/confirmAddProd"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="@string/confirm"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/button_logout_shape"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

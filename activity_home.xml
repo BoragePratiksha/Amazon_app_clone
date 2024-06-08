@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    tools:context=".HomeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/home_layout"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="#E453AEF6">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbar"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:background="#E453AEF6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="@string/amazon"
+                            android:textColor="@color/black"
+                            android:textSize="27sp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"/>
+
+
+                        <ImageView
+                            android:id="@+id/home_cart"
+                            android:layout_width="47dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="200dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cart" />
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </LinearLayout>
+            
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:flipInterval="3500"
+                android:autoStart="true"
+                android:inAnimation="@android:anim/slide_out_right">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/one"
+                    android:contentDescription="@string/one" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/two"
+                    android:contentDescription="@string/two" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/three"
+                    android:contentDescription="@string/three" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/four"
+                    android:contentDescription="@string/four" />
+
+            </ViewFlipper>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="17dp"
+                android:text="@string/deals_of_the_day"
+                android:textSize="23sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:background="@color/white"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shoes1"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/product1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <CheckBox
+                                android:id="@+id/fav1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_wishlist_item"
+                                app:useMaterialThemeColors="false"
+                                android:layout_marginStart="59dp"/>
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/shoes1"/>
+
+                            <TextView
+                                android:id="@+id/oddshoename"
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dp"
+                                android:text="@string/nike_revolution_5_nrunning_shoes"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_3000"
+                                android:id="@+id/oddshoeprice"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shoes2"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/product2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <CheckBox
+                                android:id="@+id/fav2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_wishlist_item"
+                                app:useMaterialThemeColors="false"
+                                android:layout_marginStart="59dp"/>
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/shoes2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dp"
+                                android:text="@string/nike_air_nmax_shoes"
+                                android:id="@+id/evenshoename"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_9500"
+                                android:id="@+id/evenshoeprice"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shoes3"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/product3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <CheckBox
+                                android:id="@+id/fav3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_wishlist_item"
+                                app:useMaterialThemeColors="false"
+                                android:layout_marginStart="59dp"/>
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/shoes1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dp"
+                                android:text="@string/Nike_revolution_5_nrunning_shoes"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/__3000"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shoes4"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/product4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <CheckBox
+                                android:id="@+id/fav4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_wishlist_item"
+                                app:useMaterialThemeColors="false"
+                                android:layout_marginStart="59dp"/>
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/shoes2"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dp"
+                                android:text="@string/nike_air"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/__9500"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shoes5"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/product5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <CheckBox
+                                android:id="@+id/fav5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:button="@drawable/selector_wishlist_item"
+                                app:useMaterialThemeColors="false"
+                                android:layout_marginStart="59dp"/>
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/shoes1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dp"
+                                android:text="@string/shoes"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/_300"
+                                android:textColor="@color/black"
+                                android:textSize="23sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="17dp"
+                android:text="@string/top_products"
+                android:textSize="23sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"/>
+
+            <ListView
+                android:id="@+id/productslist"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:nestedScrollingEnabled="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewAllProducts"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_marginEnd="20dp"
+                android:text="@string/view_all"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

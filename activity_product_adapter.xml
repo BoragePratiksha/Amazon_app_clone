@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView android:id="@+id/productImage"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_height="match_parent"
+        android:layout_width="0dip"
+        android:layout_weight="0.50"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_height="match_parent"
+        android:layout_width="0dip"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingTop="45dp"
+        android:button="@drawable/selector_wishlist_item"
+        app:useMaterialThemeColors="false"/>
+
+</LinearLayout>

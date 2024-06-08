@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo_amazon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_to_your_account"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_your_wish_list_nfind_and_reorder_past_purchases_ntrack_your_purchases"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/signInTextView"
+            android:text="@string/already_a_customer_sign_in"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:background="@drawable/intro_signin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/signUpTextView"
+            android:text="@string/new_to_amazon_in_create_an_account"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:background="@drawable/intro_signup"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
